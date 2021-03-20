@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>welcome vincent ecs</title>
-        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
-        <link href="index.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>welcome vincent ecs</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
     <script type="text/babel">
         class Welcome extends React.Component {
 
@@ -20,7 +22,7 @@
                 }
             }
 
-            componentWillMount () {
+            componentWillMount() {
                 this.timer = setInterval(() => {
                     this.setState({ currentDate: new Date().toUTCString() })
                 }, 1000)
@@ -30,13 +32,15 @@
                 return (
                     <div>
                         <h1>Welcome vincent ecs</h1>
-                        <h2>Current date time: { this.state.currentDate }</h2>
+                        <h2>Current date time: {this.state.currentDate}</h2>
+                        <a href="https://beian.miit.gov.cn//">鄂ICP备19001177号</a>
                     </div>
                 )
             }
         }
 
-        ReactDOM.render(<Welcome/>, document.body);
+        ReactDOM.render(<Welcome />, document.body);
     </script>
-    </body>
+</body>
+
 </html>
